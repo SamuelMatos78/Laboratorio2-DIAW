@@ -1,0 +1,45 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env.local
+frontend/.env.*.local
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Local Supabase state, PostgreSQL dumps and exports. Keep migrations tracked.
+supabase/.temp/
+supabase/.branches/
+supabase/volumes/
+supabase/private-exports/
+supabase/exports/
+.pgpass
+**/.pgpass
+*.dump
+*.backup
+*.bak
+*.sql.gz
+*.db
+*.sqlite
+*.sqlite3
+
+# Runtime logs can contain local account identifiers or request data.
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output and dependencies
+backend/target/
+frontend/node_modules/
+frontend/dist/
+
+# IDE and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

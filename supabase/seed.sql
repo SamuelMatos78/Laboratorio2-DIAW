@@ -1,0 +1,3 @@
+-- Contas, clientes, agentes e pedidos não são dados de seed.
+-- O catálogo público de carros é versionado na migration
+-- 20261106000001_add_car_catalog.sql e aplicado por ./start.sh.
